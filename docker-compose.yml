@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+    agea-db:
+        image: "agea-db:1.0"
+        platform: linux/x86_64
+        environment:
+            MYSQL_ROOT_PASSWORD: "admin"
+        ports:
+            - "3306:3306"
+    
+    hello-world:
+        image: hello-world
+        build:
+            context: .
+            dockerfile: Dockerfile
