@@ -13,3 +13,6 @@ Acceder a la app mysql:
 - mysql -uroot -p
 - show databases . (puedo ver la tabla usuarios creada por el script/create_table.sql)
 
+hub.docker-com:
+docker pull maxipundang1983/agea-db:1.0
+docker pull maxipundang1983/hello-world:latest
